@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: 1em Arial, Helvetica;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+:root {
+	--primary-color: #2d2f31;
+}
+
+#header {
+	padding: 1rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+	margin: auto;
+	font-size: 14px;
+}
+
+#header .container {
+	max-width: 100;
+	padding: 0 10px;
+	margin: auto;
+	overflow: hidden;
+
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.search-box-wrapper {
+	display: flex;
+	padding: 7px 5px;
+	border: 1px solid var(--primary-color);
+	border-radius: 2rem;
+	min-width: 250px;
+	/* min-width: 370px; */
+}
+
+.search-icon {
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	align-items: center;
+	cursor: no-drop;
+}
+
+.search-box-wrapper input {
+	padding: 0.5rem 19rem 0.5rem 0.5rem;
+	border: none;
+	align-items: center;
+	outline: none;
+}
+
+.nav-menu a {
+	margin: 0 1rem;
+	text-align: center;
+}
+
+.login-signup-wrappper {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.login-button {
+	padding: 9px 12px;
+	border: 1px solid var(--primary-color);
+}
+
+.signup-button {
+	padding: 11px 12px;
+	background: var(--primary-color);
+	color: #ffffff;
+}
+
+.globe-wrapper {
+	padding: 10px 12px;
+	border: 1px solid var(--primary-color);
+	box-sizing: border-box;
+}
+
+@media (max-width: 1180px) {
+	.teach-text {
+		display: none;
+	}
+
+	.search-box-wrapper {
+		min-width: 300px;
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 980px) {
+	.plan-price-text {
+		display: none;
+	}
+}

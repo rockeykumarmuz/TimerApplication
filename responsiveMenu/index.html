@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<title>Header</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="brand-wrapper">
+				<p>Coding Master</p>
+			</div>
+			<div id="hemburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
+			<nav class="main-nav">
+				<i class="fa-solid fa-xmark hide-menu-bar"></i>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Contact Us</a>
+				<a href="#">Sign in</a>
+			</nav>
+		</header>
+
+		<script>
+			const hemburger = document
+				.getElementById('hemburger')
+				.addEventListener('click', () => document.querySelector('.main-nav').classList.toggle('show'))
+
+			const hideMenuButton = document
+				.querySelector('.hide-menu-bar')
+				.addEventListener('click', () => document.querySelector('.main-nav').classList.toggle('show'))
+
+		</script>
+	</body>
+</html>

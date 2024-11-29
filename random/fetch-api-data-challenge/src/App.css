@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	height: 3rem;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+/* Common styles for each tab */
+.container div {
+	display: flex; /* Use flex to center text horizontally */
+	align-items: center; /* Center text vertically */
+	justify-content: center; /* Center text horizontally */
+	flex: 1; /* Make each tab take equal width */
+	height: 100%; /* Make each tab take the full height of the container */
+	text-align: center; /* Center text */
+	color: #fff;
+	border-right: 2px solid #fff;
+}
+
+.tab1 {
+	background-color: black;
+}
+
+.tab2 {
+	background-color: red;
+}
+
+.tab3 {
+	background-color: cornflowerblue;
+}
